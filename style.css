@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec;
+    color: #880e4f;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding: 20px;
+}
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.btn {
+    display: inline-block;
+    background-color: #d81b60;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #ad1457;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.typing-effect {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #880e4f;
+    width: 0;
+    animation: typing 4s steps(40, end), blink 0.5s step-end infinite alternate;
+}
